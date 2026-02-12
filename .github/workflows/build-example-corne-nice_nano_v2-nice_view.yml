@@ -8,7 +8,5 @@ jobs:
     uses: ./.github/workflows/main.yml
     secrets: inherit
     with:
-      # the nice_nano_v2 is not a special board anymore and instead it is just
-      # nice_nano ... I guess since they don't manufacture the v1 anymore
       board: '["nice_nano"]'
-      shield: '["temper_left nice_view","temper_right nice_view"]'
+      shield: '["temper_left nice_view_adapter nice_view","temper_right nice_view_adapter nice_view"]'
